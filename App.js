@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text>Hola Univalle</Text>
+      <Text style={{fontSize:50, color: "white"}}>Hola Univalle</Text>
       <Text>Bienvenidos al modulo 4</Text>
     </View>
   );
@@ -18,4 +18,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+    titulo: {
+
+    }
 });
