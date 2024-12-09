@@ -8,7 +8,7 @@ export default function App() {
             <StatusBar style="auto"/>
             <Image
                 source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Univalle_bol_cbb_logo.png'}}
-                   style={{height: 200, width: 200}}
+                   style={styles.logo}
             />
 
             <Text style={styles.titulo}>Hola Univalle</Text>
@@ -31,5 +31,8 @@ const styles = StyleSheet.create({
     },
     subtitulo: {
         alignSelf: 'center'
+    },
+    logo: {
+        height: 200, width: 200
     }
 });
