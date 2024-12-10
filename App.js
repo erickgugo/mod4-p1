@@ -49,11 +49,9 @@ export default function App() {
     return (
         <View style={styles.container}>
             <StatusBar style="auto"/>
-            {/*<Image*/}
-            {/*    source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Univalle_bol_cbb_logo.png'}}*/}
-            {/*       style={styles.logo}*/}
-            {/*/>*/}
-            <Image source={logoUnivalle} style={styles.logo2}/>
+            <Image source={{
+                uri: image ? image: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Univalle_bol_cbb_logo.png'
+            }} style={styles.logo2}/>
 
             <Text style={styles.titulo}>Hola Univalle</Text>
             <Text style={styles.subtitulo}>Bienvenidos al MODULO-4</Text>
@@ -61,8 +59,6 @@ export default function App() {
                        onPress={abrirCamaraAsync}>
                 <Text style={styles.textoBoton}>Abrir Camara</Text>
             </Pressable>
-
-            {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
         </View>
     );
 }
